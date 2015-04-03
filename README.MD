@@ -6,7 +6,7 @@ A small script to send javascript errors automatically to Google Analytics.
 
 ## Getting started
 
-Include `errorlytics.js` after loading the Google Analytics 'Universal Analytics' tracking code. Any javascript errors occuring will then be sent to Google Analytics as _events_. The error events can be found under the category 'errorlytics' as 'error' actions. Each event's label will be a stack trace of the error as it occured.
+Include `error-ejector.js` after loading the Google Analytics 'Universal Analytics' tracking code. Any javascript errors occuring will then be sent to Google Analytics as _events_. The error events can be found under the category 'error-ejector' as 'error' actions. Each event's label will be a stack trace of the error as it occured.
 
 ## More info
 
@@ -23,7 +23,7 @@ If you are seeing 'Error in external script...' events, this means browsers are 
 
 ### Error stack limitations
 
-Not all browsers have implemented the extended [ErrorEvent interface](https://html.spec.whatwg.org/multipage/webappapis.html#errorevent). Errorlytics will send the complete stack as a label when available and falls back to sending only the error message, script url and line number for older browsers.
+Not all browsers have implemented the extended [ErrorEvent interface](https://html.spec.whatwg.org/multipage/webappapis.html#errorevent). Error Ejector will send the complete stack as a label when available and falls back to sending only the error message, script url and line number for older browsers.
 
 ## Roadmap
 

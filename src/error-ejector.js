@@ -36,6 +36,6 @@
 		}
 
 		// Do the actual sending of events
-		ga('send', 'event', 'errorlytics', 'error', composeLabel());
+		ga('send', 'event', 'error-ejector', 'error', composeLabel());
 	};
 })(window);
