@@ -1,0 +1,8 @@
+{
+  "name": "error-ejector",
+  "main": "src/error-ejector.js",
+  "ignore": [
+    "**/.*",
+    "examples"
+  ]
+}
