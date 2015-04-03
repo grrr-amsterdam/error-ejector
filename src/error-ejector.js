@@ -19,7 +19,7 @@
 				location += ':' + column;
 			}
 
-			// Strip of the 'Uncaught' part of the message if it's there
+			// Strip off the 'Uncaught' part of the message if it's there
 			// to make the message resemble a stack trace
 			var prefix = 'Uncaught ';
 			if (message.indexOf(prefix) === 0) {
@@ -36,6 +36,6 @@
 		}
 
 		// Do the actual sending of events
-		ga('send', 'event', 'error-ejector', 'error', composeLabel());
+		win.ga('send', 'event', 'error-ejector', 'error', composeLabel());
 	};
 })(window);
